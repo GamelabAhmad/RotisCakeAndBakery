@@ -6,6 +6,10 @@
     <title>Rotis Cake & Bakery</title>
     <!-- Link Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Assets -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
     <!-- Kak Ahmad -->
@@ -21,16 +25,131 @@
 
 
     <!-- Kak Rian -->
-    <section id="contact">
-
-    </section>
+    <!-- ======= breadcrumbs Section ======= -->
+    <main id="main">
+        <div class="breadcrumbs">
+          <div class="page-header d-flex align-items-center" style="background-image: url('assets/img/page-header.jpg');">
+            <div class="container position-relative">
+              <div class="row d-flex justify-content-center">
+                <div class="col-lg-6 text-center">
+                  <h2>Hubungi Kami</h2><br>
+                  <h4>🌟 Selamat Datang di Rotis Bakery! 🌟</h4>
+                  <Anda>Kami senang Anda telah mengunjungi toko kami! Di Rotis Bakery, kami menyajikan berbagai pilihan roti dan kue lezat.. Anda dapat datang langsung ke outlate terdekat kami maupun melakukan pemesanan secara online.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav>
+            <div class="container">
+              <ol>
+                <li><h2 style="color: black;">Kunjungi outlet kami yang terdekat:</h2></li>
+              </ol>
+            </div>
+          </nav>
+        </div>
+    
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+          <div class="container" data-aos="fade-up">
+            <!-- Google Maps alamat -->
+            <div>
+              <iframe style="border:0; width: 100%; height: 340px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126931.38788346697!2d110.3579517!3d-7.1101676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7089b953d63f2d%3A0xfe74cfdca3a90d3d!2sDesa%20Wisata%20Branjang!5e0!3m2!1sen!2sid!4v1646425442407!5m2!1sen!2sid" frameborder="0" allowfullscreen></iframe>
+            </div>
+    
+            <!-- Form Pemesanan -->
+            <h1 style="text-align: center;">Formulir Pemesanan</h1>
+            <table>
+                <tr>
+                    <th colspan="2">Silakan isi formulir di bawah ini untuk melakukan pemesanan:</th>
+                </tr>
+                <tr>
+                    <td><label for="nama" class="bi bi-person">   Nama:</label></td>
+                    <td><input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap Anda"></td>
+                </tr>
+                <tr>
+                    <td><label for="email" class="bi bi-envelope flex-shrink-0">   Email:</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="Masukkan alamat email Anda (contoh@example.com)"></td>
+                </tr>
+                <tr>
+                  <td><label for="alamat" class="bi bi-geo-fill">   Alamat:</label></td>
+                  <td><textarea id="alamat" name="alamat" placeholder="Masukkan alamat lengkap Anda"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="pesan" class="bi bi-chat-dots">   Pesanan:</label></td>
+                    <td><textarea id="pesan" name="pesan" placeholder="Masukkan pesanan Anda secara detail"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="button" onclick="validateForm()">Kirim Pesan</button></td>
+                </tr>
+            </table>
+          </div>
+        </section>
+    
+      </main>
 
     <!-- Kak Rian -->
-    <footer>
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+
+        <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <img src="assets/img/logo.png" alt="logo"><span>Rotis</span>
+            </a>
+            <h5>Alamat </h5>
+            <p>Desa Wisata Branjang, Kec. Ungaran Barat, Kab. Semarang, Prov. Jawa Tengah, Kode pos 50519.</p>
+            <div class="social-links d-flex mt-4">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/serbaroti.s/" class="instagram"><i class="bi bi-instagram"></i></a>
+                <!-- <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
+            </div>
+            </div>
+
+            <div class="col-lg-2 col-6 footer-links">
+            <h4>Direct Link</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="testimoni.html">Testimoni</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+            </ul>
+            </div>
+
+            <div class="col-lg-2 col-6 footer-links">
+            <h4>Layanan</h4>
+            <ul>
+                <li>Pengiriman COD</li>
+                <li>Pembelian Langsung</li>
+                <li>Pembelian Order</li>
+            </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Hubungi Kami</h4>
+            <p>
+                <strong>Phone:</strong> (+62) 858311649455<br>
+                <strong>Email:</strong> info@example.com<br>
+            </p>
+            </div>
+
+        </div>
+        </div>
+
+        <div class="container mt-4">
+        <div class="copyright">
+            &copy; Copyright <strong><span>Rotis Cakes & Bakery</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+        </div>
+        </div>
 
     </footer>
     <!-- Link JS Bootsrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
