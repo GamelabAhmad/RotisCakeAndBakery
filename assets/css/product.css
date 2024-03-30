@@ -1,0 +1,58 @@
+    body {
+      padding: 12%;
+      font-family: "Arial";
+    }
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      border: none;
+      outline: none;
+      scroll-behavior: smooth;
+    }
+    .pagination {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .pagination li {
+      list-style: none;
+      margin: 0 5px;
+    }
+
+    .pagination button {
+      padding: 5px 10px;
+      border: 1px solid #dddddd;
+      border-radius: 5px;
+      background-color: #ffffff;
+      color: #333333;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .pagination button:hover {
+        background-color: #ffc107; /* Warna warning */
+        border-color: #ffc107; /* Warna border yang sesuai */
+        color: #ffc107;
+      background-color: #eeeeee;
+    }
+
+    .pagination .active {
+      background-color: #ffc107;
+      color: #ffffff;
+      border-color: #ffc107;
+    }
+
+    .pagination .disabled {
+      pointer-events: none;
+      opacity: 0.6;
+    }
+    .modal-open {
+    overflow: hidden;
+    }
+    #produk-terbaik{
+        text-shadow: 2px 2px 4px rgba(1, 1, 1, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.258);
+    }
