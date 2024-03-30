@@ -1,5 +1,8 @@
-    body {
-      padding: 12%;
+    :root {
+      --bg-color: #ffffff;
+      --second-bg-color: #efefefee;
+    }
+      body {
       font-family: "Arial";
     }
     *{
@@ -10,6 +13,15 @@
       border: none;
       outline: none;
       scroll-behavior: smooth;
+    }
+
+    section{
+      min-height: 100vh;
+      padding: 6rem 10% 2rem;
+    }
+
+    #produk-satu{
+      background-color: var(--second-bg-color);
     }
     .pagination {
       margin-top: 20px;
@@ -55,4 +67,19 @@
     }
     #produk-terbaik{
         text-shadow: 2px 2px 4px rgba(1, 1, 1, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.258);
+    }
+    swiper-container {
+      width: 85%; /* Sesuaikan lebar swiper dengan kebutuhan */
+      height: 450px;
+      margin: 0 auto;
+    }
+
+    swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
     }
