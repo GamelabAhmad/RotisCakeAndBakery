@@ -1,0 +1,47 @@
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.deskripsi {
+    display: none;
+    margin-top: 10px;
+    text-align: justify; 
+}
+
+.deskripsi.show {
+    display: block;
+}
+
+.btn {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 100%; 
+    position: relative; 
+    color: white; 
+    font-weight: bold; 
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-family: "arial";
+    font-weight: bold; 
+}
+
+.container {
+    padding: 50px 0;
+}
+
+.dropdown-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px; 
+}
+
+
+.btn.active .dropdown-icon {
+    transform: translateY(-50%) rotate(180deg); 
+}
