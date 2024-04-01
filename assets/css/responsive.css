@@ -1,0 +1,71 @@
+@media screen and (max-width : 1200px) {
+    #hero p {
+        font-size: .9rem;
+    }
+
+    #hero h1 {
+        font-size: 2.3rem;
+        margin-bottom: 30px;
+    }
+    #hero img {
+        margin-top: 150px;
+    }
+    #keunggulan .card p {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    #hero img {
+        width: 75%;
+        margin-top: 125px;
+    }
+    #keunggulan h2 {
+        font-size: 1.5rem;
+    }
+    #keunggulan img {
+        height: 60px;
+    }
+    #keunggulan .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+        margin-top: 20px;
+    }
+    #keunggulan .card h3 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    #keunggulan .card p {
+        font-size: 1rem;
+    }
+
+    #hero .row {
+        padding-bottom: 100px;
+    }
+
+    #keunggulan p {
+        text-align: justify !important;
+    }
+}
+
+@media screen and (max-width : 576px) {
+    h1 {
+        font-size: 2rem !important;
+    }
+    #keunggulan h2 {
+        font-size: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+    #keunggulan img {
+        display: none;
+    }
+}
+
+@media screen and (max-width : 350px) {
+
+}
