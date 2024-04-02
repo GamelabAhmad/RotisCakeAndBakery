@@ -1,6 +1,11 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+:root {
+  --bg-color: #ffffff;
+  --second-bg-color: #efefefee;
+}
 body {
     font-family: var(--font-default);
     color: var(--color-default);
@@ -279,12 +284,8 @@ hr {
 #hero {
     margin: 0 20px;
     color: #1f1f1f;
-    min-height: 100vh;
-    padding-top: 75px;
-}
-
-#hero img {
-    margin-top: 150px;
+    min-height: 70vh;
+    padding-top: 50px;
 }
 
 #hero h1 {
