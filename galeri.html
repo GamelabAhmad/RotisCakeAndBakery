@@ -8,25 +8,70 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Link CSS -->
     <link rel="stylesheet" href="assets/css/galeri.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <style>
    
     </style>
 </head>
 <body>
     <!-- Kak Ahmad -->
-    <header>
-        <div id="logo">
-
-        </div>
-
-        <nav>
-
+    <header class="bg-warning-subtle sticky-top top-0">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <div class="d-flex gap-2 align-items-center">
+              <img
+                src="assets/img/logo.png"
+                alt=""
+                width="50"
+                height="50"
+                class="rounded-circle"
+              />
+              <div>
+                <a class="navbar-brand fw-bold" href="index.html">Rotis</a>
+              </div>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+                <li class="nav-item">
+                  <a class="nav-link active fw-bold" aria-current="page" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" href="product.html">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" href="testimoni.html">Testimoni</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" href="galeri.html">Galeri</a>
+                </li>
+              </ul>
+              <a href="contact.html" class="btn btn-warning rounded-5 px-3 fw-bold">Contact Us</a>
+            </div>
+          </div>
         </nav>
+      </div>
     </header>
 
 
     <!-- Kak Ilham -->
-    <section id="galeri">
+    <section id="galeri pb-5">
         <h1 class="judul-h1">GALERI</h1>
         <div class="container1 container">
           <div class="box box-1" style="background-image: url(assets/img/Chocochip\ Bulat.jpg)" data-text="Kastangel"></div>
@@ -52,7 +97,7 @@
             data-text="Lidah Kucing"
           ></div>
         </div>
-        <div class="container1 container">
+        <div class="container1 container pb-5">
           <div
             class="box box-1"
             style="background-image: url(assets/img/Sprinkle\ Bulat.jpg)"
@@ -82,9 +127,71 @@
       </section>
 
     <!-- Kak Rian -->
-    <footer>
+    <footer id="footer" class="footer">
 
-    </footer>
+      <div class="container">
+      <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+              <img src="assets/img/logo.png" alt="logo"><span>Rotis</span>
+          </a>
+          <h5>Alamat </h5>
+          <p>Desa Wisata Branjang, Kec. Ungaran Barat, Kab. Semarang, Prov. Jawa Tengah, Kode pos 50519.</p>
+          <div class="social-links d-flex mt-4">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/serbaroti.s/" class="instagram"><i class="bi bi-instagram"></i></a>
+              <!-- <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
+          </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+          <h4>Direct Link</h4>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="product.html">Product</a></li>
+              <li><a href="testimoni.html">Testimoni</a></li>
+              <li><a href="galeri.html">Galeri</a></li>
+          </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+          <h4>Layanan</h4>
+          <ul>
+              <li>Pengiriman COD</li>
+              <li>Pembelian Langsung</li>
+              <li>Pembelian Order</li>
+          </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Hubungi Kami</h4>
+          <p>
+              <strong>Phone:</strong> (+62) 858311649455<br>
+              <strong>Email:</strong> info@example.com<br>
+          </p>
+          </div>
+
+      </div>
+      </div>
+
+      <div class="container mt-4">
+      <div class="copyright">
+          &copy; Copyright <strong><span>Rotis Cakes & Bakery</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+      </div>
+      </div>
+
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="assets/js/script.js"></script>
+
+  <script>
+  AOS.init();
+  </script>
     <!-- Link JS Bootsrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
