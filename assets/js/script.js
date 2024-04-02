@@ -52,14 +52,10 @@ function kirimPesan() {
     "https://wa.me/" + nomorWhatsApp + "?text=" + encodedPesan;
 }
 $(document).ready(function () {
-  // Saat pengguna melakukan scroll
   $(window).scroll(function () {
-    // Jika jarak scroll lebih besar dari 50px dari atas
     if ($(this).scrollTop() > 50) {
-      // Tambahkan kelas 'sticky' pada navbar
       $(".navbar").addClass("sticky");
     } else {
-      // Jika tidak, hapus kelas 'sticky' dari navbar
       $(".navbar").removeClass("sticky");
     }
   });
