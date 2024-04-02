@@ -1,183 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rotis Cake & Bakery</title>
     <!-- Link Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="assets/css/about.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/about.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
     <!-- Kak Ahmad -->
     <header class="bg-warning-subtle sticky-top top-0">
-        <div class="container">
-          <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <div class="d-flex gap-2 align-items-center">
-                <img
-                  src="assets/img/logo.png"
-                  alt=""
-                  width="50"
-                  height="50"
-                  class="rounded-circle"
-                />
-                <div>
-                  <a class="navbar-brand fw-bold" href="index.html">Rotis</a>
-                </div>
-              </div>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
-                  <li class="nav-item">
-                    <a class="nav-link active fw-bold" aria-current="page" href="index.html"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link fw-bold" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link fw-bold" href="product.html">Product</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link fw-bold" href="testimoni.html">Testimoni</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link fw-bold" href="galeri.html">Galeri</a>
-                  </li>
-                </ul>
-                <a href="contact.html" class="btn btn-warning rounded-5 px-3 fw-bold">Contact Us</a>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <div class="d-flex gap-2 align-items-center">
+              <img
+                src="assets/img/logo.png"
+                alt=""
+                width="50"
+                height="50"
+                class="rounded-circle"
+              />
+              <div>
+                <a class="navbar-brand fw-bold" href="index.html">Rotis</a>
               </div>
             </div>
-          </nav>
-        </div>
-      </header>
-
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active fw-bold"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" href="product.html">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" href="testimoni.html"
+                    >Testimoni</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" href="galeri.html">Galeri</a>
+                </li>
+              </ul>
+              <a
+                href="contact.html"
+                class="btn btn-warning rounded-5 px-3 fw-bold"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
 
     <!-- Kak Rohmah -->
     <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h1> Selamat Datang di Rotis Cakes & Bakery</h1>
-                    <img src="assets/img/foto-about.jpg" alt="Product" class="img-fluid">
-                </div>
-                <div class="col-md-6">
-                    <button id="apaItuRotis" class="about btn btn-warning">
-                        Apa itu Rotis Cakes & Bakery? 
-                        <span id="iconApaItuRotis" class="dropdown-icon">^</span>
-                    </button>
-
-                <div id="deskripsiApaItuRotis" class="deskripsi" data-aos="fade-down">
-                    Rotis Cakes & Bakery adalah sebuah usaha UMKM yang berdedikasi dalam menyajikan berbagai jenis roti dan kue kering berkualitas tinggi. 
-                    Sebagai spesialis dalam bidang F&B, kami menawarkan ragam pilihan produk mulai dari brownies hingga roti kering seperti nastar, kastangel, 
-                    putri salju, chocochip, lidah kucing, dan sprinkle. Kami bangga menyajikan produk unggulan kami yaitu kue kering, yang dibuat dengan teliti 
-                    dan dengan bahan-bahan berkualitas terbaik. Dengan komitmen kami terhadap kualitas dan rasa, Rotis Cakes & Bakery siap memanjakan lidah 
-                    pelanggan kami dengan sentuhan manis dan lezat dari setiap gigitan kue kami.
-                </div>
-                <button id="sejarahRotis" class="about btn btn-warning">
-                    Bagaimana Sejarah Berdirinya Rotis Cakes & Bakery?
-                    <span id="iconSejarahRotis" class="dropdown-icon">^</span>
-                </button>
-                <div id="deskripsiSejarahRotis" class="deskripsi" data-aos="fade-down">
-                    Rotis Cakes & Bakery awalnya dikenal dengan nama ROTTI, didirikan pada September 2020 sebagai respon dari dampak ekonomi pandemi Covid-19.
-                    Dengan latar belakang  keluarga yang berpengalaman dalam industri kue dan roti,
-                    kami memulai usaha kecil-kecilan dengan modal minim.
-                    Dengan komitmen terhadap kualitas, kami melakukan riset mendalam untuk menciptakan produk dengan cita rasa tinggi dan konsisten.
-                    Penjualan awal dilakukan secara online melalui whatsapp, dan dengan penambahan varian produk serta strategi pemasaran,
-                    penjualan terus berkembang.
-                    Dengan dukungan dari beberapa instansi terkait,
-                    modal usaha pun berkembang dan memungkinkan kami untuk memperluas produksi.
-                    Pada awal tahun 2022, kami melakukan registrasi merk dan mengubah nama usaha 
-                    menjadi Rotis untuk memenuhi persyaratan administrasi.
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-6">
+            <h1>Selamat Datang di Rotis Cakes & Bakery</h1>
+            <img
+              src="assets/img/foto-about.jpg"
+              alt="Product"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-12 col-lg-6">
+            <button id="apaItuRotis" class="about btn btn-warning">
+              Apa itu Rotis Cakes & Bakery?
+              <span id="iconApaItuRotis" class="dropdown-icon">^</span>
+            </button>
+            <div
+              id="deskripsiApaItuRotis"
+              class="deskripsi"
+              data-aos="fade-down"
+            >
+              Rotis Cakes & Bakery adalah sebuah usaha UMKM yang berdedikasi
+              dalam menyajikan berbagai jenis roti dan kue kering berkualitas
+              tinggi. Sebagai spesialis dalam bidang F&B, kami menawarkan ragam
+              pilihan produk mulai dari brownies hingga roti kering seperti
+              nastar, kastangel, putri salju, chocochip, lidah kucing, dan
+              sprinkle. Kami bangga menyajikan produk unggulan kami yaitu kue
+              kering, yang dibuat dengan teliti dan dengan bahan-bahan
+              berkualitas terbaik. Dengan komitmen kami terhadap kualitas dan
+              rasa, Rotis Cakes & Bakery siap memanjakan lidah pelanggan kami
+              dengan sentuhan manis dan lezat dari setiap gigitan kue kami.
             </div>
+            <button id="sejarahRotis" class="about btn btn-warning">
+              Bagaimana Sejarah Berdirinya Rotis Cakes & Bakery?
+              <span id="iconSejarahRotis" class="dropdown-icon">^</span>
+            </button>
+            <div
+              id="deskripsiSejarahRotis"
+              class="deskripsi"
+              data-aos="fade-down"
+            >
+              Rotis Cakes & Bakery awalnya dikenal dengan nama ROTTI, didirikan
+              pada September 2020 sebagai respon dari dampak ekonomi pandemi
+              Covid-19. Dengan latar belakang keluarga yang berpengalaman dalam
+              industri kue dan roti, kami memulai usaha kecil-kecilan dengan
+              modal minim. Dengan komitmen terhadap kualitas, kami melakukan
+              riset mendalam untuk menciptakan produk dengan cita rasa tinggi
+              dan konsisten. Penjualan awal dilakukan secara online melalui
+              whatsapp, dan dengan penambahan varian produk serta strategi
+              pemasaran, penjualan terus berkembang. Dengan dukungan dari
+              beberapa instansi terkait, modal usaha pun berkembang dan
+              memungkinkan kami untuk memperluas produksi. Pada awal tahun 2022,
+              kami melakukan registrasi merk dan mengubah nama usaha menjadi
+              Rotis untuk memenuhi persyaratan administrasi.
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
 
+    <section id="keunggulan">
+      <div class="container-fluid ">
+        <div class="container py-5">
+          <div class="row align-items-center mt-4">
+            <div class="col-md-8 col-sm-6">
+              <h2 class="text-start fw-bold text-dark">
+                Why Choose Rotis Cakes & Bakery?
+              </h2>
+            </div>
+            <div class="col-6 col-md-4 col-sm-6">
+              <img
+                src="assets/img/logo.png"
+                class="float-end"
+                height="80px"
+                style=""
+                alt="..."
+              />
+            </div>
+          </div>
+          <div class="row justify-content-center my-5">
+            <div class="col-lg-3 col-md-4 col-sm-10">
+              <div
+                class="card p-4 bg-light"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
+                <div class="row">
+                  <div class="col-sm-12">
+                    <svg
+                      width="96px"
+                      height="96px"
+                      viewBox="0 0 64 64"
+                      id="filled"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: none;
+                            /* Hapus baris ini untuk menghapus warna pengisi */
+                          }
+
+                          .cls-1,
+                          .cls-2 {
+                            stroke: #000000;
+                            /* Pertahankan warna garis tepi */
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                            stroke-width: 2px;
+                          }
+
+                          .cls-2 {
+                            fill: none;
+                            /* Ganti warna pengisi sesuai keinginan Anda */
+                          }
+                        </style>
+                      </defs>
+                      <title />
+                      <path
+                        class="cls-1"
+                        d="M42.5347,54.2538,32,60,21.4653,54.2538A22,22,0,0,1,10,34.94V14A10,10,0,0,0,20,4H44A10,10,0,0,0,54,14V34.94A22,22,0,0,1,42.5347,54.2538Z"
+                      />
+                      <polygon
+                        class="cls-2"
+                        points="42 27.5 34.5 27.5 34.5 20 29.5 20 29.5 27.5 22 27.5 22 32.5 29.5 32.5 29.5 40 34.5 40 34.5 32.5 42 32.5 42 27.5"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="col pt-3">
+                  <h3 class="text-start fw-bold">Sehat</h3>
+                  <p class="text-start">
+                    Produk kami dirancang untuk mendukung gaya hidup sehat Anda.
+                    Nikmati manfaat kesehatan maksimal dengan setiap penggunaan,
+                    tanpa kompromi.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-4 col-sm-10"
+              data-aos="fade-up"
+              data-aos-duration="2500"
+            >
+              <div class="card p-4 bg-light">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <svg
+                      fill="#000000"
+                      width="96px"
+                      height="96px"
+                      viewBox="0 0 24 24"
+                      id="Layer_1"
+                      version="1.1"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <path
+                        d="M12,2C9.54,2,7.17,2.9,5.33,4.55c-0.41,0.37-0.45,1-0.08,1.41c0.37,0.41,1,0.45,1.41,0.08C8.13,4.72,10.03,4,12,4  c4.41,0,8,3.59,8,8s-3.59,8-8,8c-1.97,0-3.87-0.72-5.33-2.04c-0.41-0.37-1.04-0.33-1.41,0.08c-0.37,0.41-0.33,1.04,0.08,1.41  C7.17,21.1,9.54,22,12,22c5.51,0,10-4.49,10-10C22,6.49,17.51,2,12,2z"
+                      />
+                      <path
+                        d="M3,17h3c0.55,0,1-0.45,1-1h0.76l1.79,0.89C9.69,16.96,9.84,17,10,17h6c0.5,0,0.92-0.37,0.99-0.86l-0.08-7  c0.04-0.29-0.04-0.58-0.23-0.8C16.49,8.13,16.21,8,15.92,8H13V6c0-0.55-0.45-1-1-1h-1c-0.27,0-0.52,0.11-0.71,0.29L7.59,8H7  c0-0.55-0.45-1-1-1H3C2.45,7,2,7.45,2,8v8C2,16.55,2.45,17,3,17z M8,10c0.27,0,0.52-0.11,0.71-0.29L11,7.41V9c0,0.55,0.45,1,1,1  h3.13v5h-4.9l-1.79-0.89C8.31,14.04,8.16,14,8,14H7v-4H8z M4,9h1v5v1H4V9z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="col pt-3">
+                  <h3 class="text-start fw-bold">Rasa</h3>
+                  <p class="text-start">
+                    Cita rasa produk yang enak dan konsisten yang dihasilkan
+                    dari riset mendalam. Dan dapat dibandingkan dengan lainnya
+                    dengan kisaran harga yang sama.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-10">
+              <div
+                class="card p-4 bg-light"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
+                <div class="row">
+                  <div class="col-sm-12">
+                    <svg
+                      fill="#000000"
+                      height="96px"
+                      width="96px"
+                      version="1.1"
+                      id="Layer_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 0 512 512"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <g>
+                          <path
+                            d="M495.432,76.96H16.568C7.432,76.96,0,84.392,0,93.528v324.944c0,9.136,7.432,16.568,16.568,16.568h478.864
+      c9.136,0,16.568-7.432,16.568-16.568V93.528C512,84.392,504.568,76.96,495.432,76.96z M495.967,350.597h-26.189
+      c-4.427,0-8.017,3.589-8.017,8.017s3.589,8.017,8.017,8.017h26.189v18.171H367.166c-4.427,0-8.017,3.589-8.017,8.017
+      c0,4.427,3.589,8.017,8.017,8.017h128.801v17.637c0,0.295-0.239,0.534-0.534,0.534H16.568c-0.295,0-0.534-0.239-0.534-0.534
+      v-17.637H332.96c4.427,0,8.017-3.589,8.017-8.017c0-4.427-3.589-8.017-8.017-8.017H16.033V366.63h419.543
+      c4.427,0,8.017-3.589,8.017-8.017s-3.589-8.017-8.017-8.017H16.033v-18.198c0.179,0.005,0.354,0.027,0.534,0.027h478.864
+      c0.181,0,0.356-0.021,0.534-0.027V350.597z M495.967,315.858c0,0.295-0.239,0.534-0.534,0.534H16.568
+      c-0.295,0-0.534-0.239-0.534-0.534V93.528c0-0.295,0.239-0.534,0.534-0.534h478.864c0.295,0,0.534,0.239,0.534,0.534V315.858z"
+                          />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path
+                            d="M469.779,145.369c-14.44,0-26.188-11.748-26.188-26.188c0-4.427-3.589-8.017-8.017-8.017h-94.066
+      c-4.427,0-8.017,3.589-8.017,8.017s3.588,8.017,8.017,8.017h86.813c3.254,16.866,16.575,30.187,33.441,33.441v88.107
+      c-16.866,3.254-30.188,16.575-33.441,33.441h-86.813c-4.427,0-8.017,3.589-8.017,8.017s3.589,8.017,8.017,8.017h94.066
+      c4.427,0,8.017-3.589,8.017-8.017c0-14.44,11.748-26.188,26.188-26.188c4.427,0,8.017-3.589,8.017-8.017V153.386
+      C477.795,148.959,474.206,145.369,469.779,145.369z"
+                          />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path
+                            d="M170.487,282.188H83.679c-3.254-16.864-16.577-30.186-33.441-33.441V160.64c16.864-3.256,30.188-16.576,33.441-33.441
+      h86.808c4.427,0,8.017-3.589,8.017-8.017s-3.589-8.017-8.017-8.017H76.426c-4.427,0-8.017,3.589-8.017,8.017
+      c0,14.44-11.748,26.188-26.188,26.188c-4.427,0-8.017,3.589-8.017,8.017V256c0,4.427,3.589,8.017,8.017,8.017
+      c14.44,0,26.188,11.748,26.188,26.188c0,4.427,3.589,8.017,8.017,8.017h94.062c4.427,0,8.017-3.589,8.017-8.017
+      S174.915,282.188,170.487,282.188z"
+                          />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path
+                            d="M256,111.165c-51.572,0-93.528,41.957-93.528,93.528s41.956,93.528,93.528,93.528s93.528-41.956,93.528-93.528
+      S307.572,111.165,256,111.165z M256,282.188c-42.731,0-77.495-34.764-77.495-77.495s34.764-77.495,77.495-77.495
+      s77.495,34.764,77.495,77.495S298.731,282.188,256,282.188z"
+                          />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path
+                            d="M264.017,198.533v-27.974c11.431,1.758,18.171,6.984,18.171,10.084c0,4.427,3.589,8.017,8.017,8.017
+      s8.017-3.589,8.017-8.017c0-13.489-14.236-24.034-34.205-26.274v-0.982c0-4.427-3.589-8.017-8.017-8.017s-8.017,3.589-8.017,8.017
+      v0.982c-19.969,2.24-34.205,12.786-34.205,26.274c0,18.806,18.787,25.929,34.205,30.21v27.974
+      c-11.431-1.758-18.171-6.984-18.171-10.084c0-4.427-3.589-8.017-8.017-8.017s-8.017,3.589-8.017,8.017
+      c0,13.489,14.236,24.034,34.205,26.274V256c0,4.427,3.589,8.017,8.017,8.017s8.017-3.589,8.017-8.017v-0.982
+      c19.969-2.24,34.205-12.786,34.205-26.274C298.221,209.937,279.434,202.814,264.017,198.533z M247.983,194.089
+      c-13.372-4.204-18.171-7.957-18.171-13.446c0-3.1,6.74-8.326,18.171-10.084V194.089z M264.017,238.827v-23.53
+      c13.372,4.204,18.171,7.957,18.171,13.446C282.188,231.843,275.447,237.069,264.017,238.827z"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <div class="col pt-3">
+                  <h3 class="text-start fw-bold">Murah</h3>
+                  <p class="text-start">
+                    Produk dengan harga terjangkau menawarkan nilai yang luar
+                    biasa, memenuhi kebutuhan dengan anggaran terbatas, dan
+                    menjangkau konsumen lebih luas.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Kak Rian -->
     <footer id="footer" class="footer">
-
-        <div class="container">
+      <div class="container">
         <div class="row gy-4">
-            <div class="col-lg-5 col-md-12 footer-info">
+          <div class="col-lg-5 col-md-12 footer-info">
             <a href="index.html" class="logo d-flex align-items-center">
-                <img src="assets/img/logo.png" alt="logo"><span>Rotis</span>
+              <img src="assets/img/logo.png" alt="logo" /><span>Rotis</span>
             </a>
-            <h5>Alamat </h5>
-            <p>Desa Wisata Branjang, Kec. Ungaran Barat, Kab. Semarang, Prov. Jawa Tengah, Kode pos 50519.</p>
+            <h5>Alamat</h5>
+            <p>
+              Desa Wisata Branjang, Kec. Ungaran Barat, Kab. Semarang, Prov.
+              Jawa Tengah, Kode pos 50519.
+            </p>
             <div class="social-links d-flex mt-4">
-                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/serbaroti.s/" class="instagram"><i class="bi bi-instagram"></i></a>
-                <!-- <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/serbaroti.s/" class="instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <!-- <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
             </div>
-            </div>
+          </div>
 
-            <div class="col-lg-2 col-6 footer-links">
+          <div class="col-lg-2 col-6 footer-links">
             <h4>Direct Link</h4>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="product.html">Product</a></li>
-                <li><a href="testimoni.html">Testimoni</a></li>
-                <li><a href="galeri.html">Galeri</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="product.html">Product</a></li>
+              <li><a href="testimoni.html">Testimoni</a></li>
+              <li><a href="galeri.html">Galeri</a></li>
             </ul>
-            </div>
+          </div>
 
-            <div class="col-lg-2 col-6 footer-links">
+          <div class="col-lg-2 col-6 footer-links">
             <h4>Layanan</h4>
             <ul>
-                <li>Pengiriman COD</li>
-                <li>Pembelian Langsung</li>
-                <li>Pembelian Order</li>
+              <li>Pengiriman COD</li>
+              <li>Pembelian Langsung</li>
+              <li>Pembelian Order</li>
             </ul>
-            </div>
+          </div>
 
-            <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <div
+            class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
+          >
             <h4>Hubungi Kami</h4>
             <p>
-                <strong>Phone:</strong> (+62) 858311649455<br>
-                <strong>Email:</strong> info@example.com<br>
+              <strong>Phone:</strong> (+62) 858311649455<br />
+              <strong>Email:</strong> info@example.com<br />
             </p>
-            </div>
-
+          </div>
         </div>
-        </div>
+      </div>
 
-        <div class="container mt-4">
+      <div class="container mt-4">
         <div class="copyright">
-            &copy; Copyright <strong><span>Rotis Cakes & Bakery</span></strong>. All Rights Reserved
+          &copy; Copyright <strong><span>Rotis Cakes & Bakery</span></strong
+          >. All Rights Reserved
         </div>
-        <div class="credits">
-        </div>
-        </div>
-
+        <div class="credits"></div>
+      </div>
     </footer>
     <!-- Link JS Bootsrap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="assets/js/about.js"></script>
     <script src="assets/js/script.js"></script>
 
     <script>
-    AOS.init();
+      AOS.init();
     </script>
-</body>
+  </body>
 </html>
