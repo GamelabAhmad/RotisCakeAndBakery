@@ -43,29 +43,3 @@ function validateForm() {
     var encodedPesan = encodeURIComponent(templatePesan);
     window.location.href = 'https://wa.me/' + nomorWhatsApp + '?text=' + encodedPesan;
   }
-
-    //   Dina
-  $(document).ready(function () {
-    $("#faq-store").click(function () {
-      $(".accordion-store").show();
-      $(".accordion-vape").hide();
-    });
-    $("#faq-vape").click(function () {
-      $(".accordion-store").hide();
-      $(".accordion-vape").show();
-    });
-  });
-  
-  //   function Readmore Ahmad Rizal
-  $(document).ready(function () {
-    $("#myBtn").click(function () {
-        $("#short").toggle("slow");
-        $("#more").slideToggle("slow");
-        var btnText = $("#myBtn").text();
-        if (btnText === "Read more") {
-            $("#myBtn").text("Read less");
-        } else {
-            $("#myBtn").text("Read more");
-        }
-    });
-});
