@@ -58,7 +58,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Build the card content with proper closing tags
     const cardContent = `
-        <div class="card">
+        <div class="card"
+        data-aos="flip-left"
+        data-aos-offset="-50"
+        data-aos-delay="50"
+        data-aos-duration="700"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center">
         <img src="${product.gambar}" class="card-img-top" alt="${product.nama}">
         <div class="card-body bg-body-tertiary">
             <h6 class="card-title about-sub-heading fw-bold">${product.nama}</h6>

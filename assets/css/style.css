@@ -331,4 +331,32 @@ hr {
     font-size: .9rem;
 }
 /* hero & keunggulan END */
-/* root */
+/* Swiper testimoni */
+swiper-container {
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+}
+
+swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.user{
+  width: 10%;
+}
+.testi{
+  text-align: center;
+}
